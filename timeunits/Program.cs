@@ -18,6 +18,7 @@ namespace timeunits
                 Console.WriteLine("Note: 1 year = 365.2425 days and 1 month = 30.436875 days.");
                 Console.BackgroundColor = ConsoleColor.Black;
                 Console.ForegroundColor = ConsoleColor.White;
+                //initializes array for time units and their times in milliseconds
                 string[] times = { "ms", "sec", "min", "hr", "d", "w", "mo", "yr", "dec", "c", "mi" };
                 BigInteger[] times_ms = {1, 1000, 60000, 3600000, 86400000, 604800000, 2629746000, 31556952000, 315569520000, 3155695200000, 31556952000000};
                 Console.WriteLine("millisecond, second, minute, hour, day, week, month, year, decade, century, millennium");
@@ -37,6 +38,8 @@ namespace timeunits
                 Console.WriteLine("Enter desired amount of time (" + unitresponse + "): ");
                 string timeresponse = Console.ReadLine();
                 bool oneofem = false;
+                //if input is decimal, negative or thousand separated, do not accept value
+                //TODO: Actually make the user able to input these
                 if (timeresponse.Contains("."))
                 {
                     Console.WriteLine("Sorry, decimals are not accepted.");
@@ -69,6 +72,7 @@ namespace timeunits
                 }
                 long timedresponse = Convert.ToInt64(timeresponse);
                 BigInteger actualtimems = new BigInteger(0);
+                //Converts the time the user inputted in their unit of measurement in milliseconds
                 switch(unitresponse)
                 {
                     case "ms":
@@ -107,9 +111,12 @@ namespace timeunits
                 }
                 for (int i = 10; i >= 0; i--)
                 {
-                    
+                    //divides the user inputted time (in ms) by the time in ms of each unit of measurement
                     BigInteger value = actualtimems / times_ms[i];
-                    long paul = 0;
+                    long paul = 0; //did I really name this "paul" lol? well I'm leaving it like that
+                    //basically gets the remainder of the division, which is then used to calculate the remaining time into the lower units of measurement
+                    //(otherwise it'd just convert the time into each unit of measurement instead of actually splitting the time between them)
+                    //couldn't really get it to work with a regular mod operator
                     while (paul < value)
                     {
                         actualtimems = actualtimems - times_ms[i];
