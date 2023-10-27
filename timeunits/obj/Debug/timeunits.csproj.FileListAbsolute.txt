@@ -1,0 +1,7 @@
+C:\Users\Alessandro\source\repos\timeunits\timeunits\bin\Debug\timeunits.exe.config
+C:\Users\Alessandro\source\repos\timeunits\timeunits\bin\Debug\timeunits.exe
+C:\Users\Alessandro\source\repos\timeunits\timeunits\bin\Debug\timeunits.pdb
+C:\Users\Alessandro\source\repos\timeunits\timeunits\obj\Debug\timeunits.csproj.AssemblyReference.cache
+C:\Users\Alessandro\source\repos\timeunits\timeunits\obj\Debug\timeunits.csproj.CoreCompileInputs.cache
+C:\Users\Alessandro\source\repos\timeunits\timeunits\obj\Debug\timeunits.exe
+C:\Users\Alessandro\source\repos\timeunits\timeunits\obj\Debug\timeunits.pdb
