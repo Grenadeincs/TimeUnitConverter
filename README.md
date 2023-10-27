@@ -15,3 +15,26 @@ Kind of poorly written, as negatives, decimals and thousand separators are not s
     decade
     century
     millennium
+
+## How this works:
+takes initial input from user in one of the chosen units of time
+math
+outputs the total time split between the various units of measurement
+
+## Program in function:
+    [ms, sec, min, hr, d, w, mo, yr, dec, c, mi]
+    Enter desired unit of measurement from the list above:
+    sec
+    Enter desired amount of time (sec):
+    1628884
+    0 mi
+    0 c
+    0 dec
+    0 yr
+    0 mo
+    2 w
+    4 d
+    20 hr
+    28 min
+    4 sec
+    0 ms
