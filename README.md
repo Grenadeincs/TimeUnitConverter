@@ -17,9 +17,13 @@ Kind of poorly written, as negatives, decimals and thousand separators are not s
     millennium
 
 ## How this works:
-takes initial input from user in one of the chosen units of time
-math
-outputs the total time split between the various units of measurement
+1: takes initial input from user in one of the chosen units of time
+
+2: math
+
+3: outputs the total time split between the various units of measurement
+
+4: profit??
 
 ## Program in function:
     [ms, sec, min, hr, d, w, mo, yr, dec, c, mi]
